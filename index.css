@@ -2,11 +2,75 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 9%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header button {
+    margin: 10px;
+    height: 35px;
+    width: 90px;
+    border: none;
+    border-radius: 5px;
+    background: #1a73e8;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+header button:hover {
+    cursor: pointer;
+    background: #418ff5;
+    box-shadow: 0 2px 1px rgb(0 0 0 / 0.1);
+}
+
+header button:focus {
+    outline: none;
+    background: #418ff5;
+    box-shadow: 0 2px 1px rgb(0 0 0 / 0.1);
+}
+
+header span {
+    margin: 5px;
+    padding: 10px;
+    color: rgb(0 0 0 / 0.87);
+}
+
+header span:hover {
+    background: #e4edf7;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+header span:focus {
+    outline: none;
+    background: #e4edf7;
+    border-radius: 50px;
+}
+
+header a {
+    color: rgb(0 0 0 / 0.87);
+    text-decoration: none;
+    margin: 10px;
+    font-size: small;
+}
+
+header a:hover {
+    text-decoration: underline;
 }
 
 main {
     margin: 0;
-    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -95,5 +159,50 @@ main .languages a {
 }
 
 main .languages a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 12%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+footer .localization {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .localization span {
+    margin-left: 30px;
+    color: rgba(0, 0, 0, .54);
+}
+
+footer .footer-links {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #dfe1e5;
+    align-items: center;
+    height: 50%;
+}
+
+footer .footer-links .left-footer-links {
+    margin-left: 15px;
+}
+
+footer .footer-links a {
+    color: rgba(0, 0, 0, .54);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer .footer-links a:hover {
     text-decoration: underline;
 }
